@@ -1,0 +1,85 @@
+.contacto{
+    background-color:rgb(190, 250, 250);
+    margin-top: -6px;
+}
+
+.contacto-info{
+    padding-top: 3px;
+    text-align:center;
+    margin-bottom: 10px;
+}
+
+
+
+.formulario{
+    width: 450px;
+    background-color:white;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    margin: auto;
+}
+
+h4{
+    text-align: center;
+    margin: 0;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.formulario input, textarea{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+
+}
+
+.formulario textarea{
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+}
+
+#entrevista{
+    background-color: aquamarine;
+    padding:0.5em 1em;
+    border-radius: 12px;
+    cursor:pointer;
+    font-size: 20px;
+}
+
+.datos-contacto{
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+
+.web-end{
+    text-align:center;
+}
+
+
+@media (min-width:950px){
+    .contacto{
+        display:flex;
+        justify-content:space-around;
+    }
+
+    .contacto-info{
+        padding-top: 0px;
+        text-align:center;
+        margin-bottom: 0;
+    }
+
+    .formulario{
+        margin: 0;
+    }
+
+    .web-end{
+        display:flex;
+        justify-content:space-around;
+        align-items: center;
+    }
+
+
+}

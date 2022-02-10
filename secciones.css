@@ -1,0 +1,77 @@
+.wave{
+width: 100%;
+}
+.detalles-mision{
+    font-size: 20px;
+    font-weight: 500;
+    max-width: 450px;
+    margin: 20px auto;
+}
+.mision{
+    color:rgb(38, 38, 100);
+}
+.iupi-mision{
+    font-size: 30px;
+}
+.round-image{
+    width: 80%;
+max-width: 300px;
+margin:20px;
+}
+.nosotros{
+    text-align: center;
+}
+.turnos{
+    text-align: center;
+    background-color:rgb(228, 144, 144);
+    padding-bottom: 18px;
+}
+.iupi-vision{
+    font-size: 30px;
+}
+.vision{
+    color:rgb(38, 38, 100);
+}
+.detalles-vision{
+    font-size: 20px;
+    font-weight: 500;
+    max-width: 450px;
+    margin: 20px auto;
+}
+.wave-down{
+    width: 100%;
+    }
+.linea-final{
+    width: 100%;
+}
+
+.text-image-vision{
+    background-color:rgb(228, 144, 144);
+}
+.wave-down-second{
+    width: 100%;
+}
+
+.wave-final{
+    width: 100%;
+}
+
+
+@media (min-width:950px){
+    .text-image{
+        display:flex;
+        justify-content: space-around;
+    }
+    .round-image{
+        width: 100%;
+    max-width: 450px;
+    margin:20px;
+    }
+    .text-image-vision{
+        display:flex;
+        justify-content: space-around;
+        background-color: rgb(228, 144, 144);
+    }
+}
+    
+  

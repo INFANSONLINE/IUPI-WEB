@@ -1,0 +1,123 @@
+:root {
+    --theme-color: white;
+    --primary-color: black;
+    --secundary-color: #99E5FF;
+    --text-color-inverse: blue;
+    --text-color: black;
+    --navbar-shallow-color: grey;
+    --menu-mobile-background-color: green;
+  }
+
+  html{
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: "noteworthy";
+    background-color: var(--theme-color);
+    color: var(--text-color);
+    padding-top:70px;
+  }
+  a {
+    text-decoration: none;
+    color: var(--text-color);
+  }
+  .topheader {
+    position: fixed;
+    box-shadow: 0 4px 5px var(--navbar-shallow-color);
+    background-color: var(--theme-color);
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+  .topnav {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    max-width: 980px;
+    margin: 0 auto;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--primary-color);
+  }
+  .logo img {
+    border-radius: 20%;
+  }
+  .menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .menu li {
+    padding: 0 15px;
+  }
+  .menu a {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--primary-color);
+    line-height: 50px;
+  }
+  .open-menu,
+  .close-menu {
+    display: none;
+  }
+  
+  @media (max-width: 950px) {
+    .logo {
+      display: flex;
+      align-items: center;
+      font-size: 18px;
+      font-weight: 500;
+      color: var(--primary-color);
+    }
+    .logo img {
+      border-radius: 20%;
+    }
+    .menu {
+      flex-direction: column;
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 100%;
+      align-items: center;
+      background-color: rgb(190, 250, 250);
+      height: 100%;
+      opacity:0;
+      pointer-events:none;
+    }
+    .menu li {
+      padding: 0;
+    }
+    .menu a {
+      font-size: 18px;
+      font-weight: 500;
+      color: var(--primary-color);
+      line-height: 60px;
+    }
+    .open-menu,
+    .close-menu {
+      display: block;
+      border:none;
+      cursor:pointer;
+      background:none;
+    }
+  
+    .close-menu {
+      align-self:flex-end;
+      background-color: rgb(190, 250, 250);
+      padding:18px;
+    }
+    
+    .menu_opened{
+      opacity:1;
+      pointer-events:all;
+    }
+    .open-menu:focus:not(:focus-visible),
+    .close-menu:focus:not(:focus-visible){ outline:none;}
+  }
+  
