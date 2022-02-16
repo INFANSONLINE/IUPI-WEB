@@ -1,11 +1,13 @@
 <?php
-$destino="info@infansonline.com";
+$destinatario='info@infansonline.com';
 $nombre=$_POST["name"];
-$mail=$_POST["Email"];
+$mail=$_POST["email"];
 $telefono=$_POST["phone"];
 $mensaje=$_POST["message"];
-$contenido="name:" . $nombre . "\nEmail:" . $mail . "\ntelefono:" . $phone . "\nmensaje:" . $mensaje;
-mail($destino,"Nueva entrevista", $contenido);
-header("Location:gracias.html");
+
+$header="Solicito nueva entrevista";
+$contenido="name:" . $nombre . "\nemail:" . $mail . "\ntelefono:" . $phone . "\nmensaje:" . $mensaje;
+mail($destinatario,"Nueva entrevista", $contenido, $header);
+header("<Location>gracias.html");
 
 ?>
