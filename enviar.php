@@ -1,13 +1,15 @@
 <?php
 $destinatario='info@infansonline.com';
-$nombre=$_POST["name"];
-$mail=$_POST["email"];
-$telefono=$_POST["phone"];
-$mensaje=$_POST["message"];
+$name = $_POST['name'];
+$email = $_POST['email'];
+$phone = $_POST['phone'];
+$message = $_POST['message'];
 
-$header="Solicito nueva entrevista";
-$contenido="name:" . $nombre . "\nemail:" . $mail . "\ntelefono:" . $phone . "\nmensaje:" . $mensaje;
-mail($destinatario,"Nueva entrevista", $contenido, $header);
-header("<Location>gracias.html");
+$header = "Solicito nueva entrevista";
+$contenido = "name:" . $name . "\nemail:" . $email . "\nphone:" . $phone . "\nmessage:" . $mensaje;
+mail($destinatario, $asunto, $contenido, $header);
+
+echo "<script>alert('correo enviado con exito')</script>";
+echo "<script> setTimeout(\"location.href='index.html'\",1000)</script>";
 
 ?>
